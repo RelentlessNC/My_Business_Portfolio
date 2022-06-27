@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Conklin Portfolio</title>
+<!--    <link rel="stylesheet" href="./assets/css/cssReset.css">-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+       <h1>
+           <span id="menu-open-btn" onclick="openNav()">&#9776;</span></h1>
+        <h1 id="page-heading">Portfolio of Nicholas Conklin</h1>
+    </header>
+    <nav class="side-nav" id="side-nav">
+        <span class="close-button" id="nav-close" onclick="closeNav()">&times;</span>
+        <ul>
+            <h2><a href="#about-me">
+                <li>About Me</li>
+                </a></h2>
+            <h2><a href="#projects">
+                    <li>My Projects</li>
+                </a></h2>
+            <h2>
+                <li>Contact Info</li>
+            </h2>
+        </ul>
+    </nav>
+    <div class="main" id="main">
+        <section id="me-block" class="bg-md flex-container">
+            <p id="statement">Certified Full stack Web Developer with a B.S. in Computer Science
+                focused on software development. Military-trained in logical problem
+                solving and fine tuned by academic and professional experience. My
+                focus is attention to detail with the user experience and navigation
+                efficiency.
+            </p>
+            <img class="image" id="selfie" src="assets/images/20220112_105834.jpg" />
+        </section>
+        <section class="bg-lt flex-container">
+            <div id="about-me">
+                <h2 class="topic-heading">About Me</h2>
+                <hr>
+                <p>After spending 6 years in the U.S. Air Force, I spent some time figuring out what I wanted to do with the rest of my life. I settled on working with computers in some way. I graudated from McMurry Univerity with a Bachelor's in Science with a Major in Computer Science. I have been working at McMurry University as an LMS Administrator since 2017. I am now enrolled in the Full Stack Web Developer coding bootcamp at UT Austin and hoping to jumpstart my career in a new direction!</p>
+            </div>
+            <div id="skills">
+                <h2 class="topic-heading">My Skills</h2>
+                <hr>
+                <ul>
+                    <li><span class="glow-text">HTML5</span></li>
+                    <li><span class="glow-text">CSS3</span></li>
+                    <li><span class="glow-text">JavaScript</span></li>
+                    <li><span class="glow-text">Python 3</span></li>
+                    <li><span class="glow-text">C</span></li>
+                    <li><span class="glow-text">Bootstrap</span></li>
+                    <li><span class="glow-text">JQuery</span></li>
+                    <li><span class="glow-text">SQL</span></li>
+                    <li><span class="glow-text">Reat.js</span></li>
+                    <li><span class="glow-text">JSON</span></li>
+                    <li><span class="glow-text">AJAX</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="bg-md" id="projects">
+            <h2 class="topic-heading">Projects</h2>
+            <div class="flex-container">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque vitae purus non molestie. Nullam convallis imperdiet vestibulum. Curabitur euismod.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque vitae purus non molestie. Nullam convallis imperdiet vestibulum. Curabitur euismod.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque vitae purus non molestie. Nullam convallis imperdiet vestibulum. Curabitur euismod.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <a href="#"><button id="back-to-top" type="reset">&#8593;</button></a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("side-nav").style.width = "250px";
+            document.getElementById("side-nav").style.display = "flex";
+        }
+
+        function closeNav() {
+            document.getElementById("side-nav").style.width = "0";
+            document.getElementById("side-nav").style.display = "none";
+        }
+    </script>
+</body></html>
