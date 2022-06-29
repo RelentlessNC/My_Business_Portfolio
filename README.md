@@ -43,35 +43,36 @@ If a Challenge assignment submission is marked as “0”, it is considered inco
 
 - A repository that only includes starter code
 
-This Challenge is graded based on the following criteria:
+# This Challenge is graded based on the following criteria:
 
-Technical Acceptance Criteria: 40%
+## Technical Acceptance Criteria: 40%
 Satisfies all of the preceding acceptance criteria.
-Deployment: 32%
-Application deployed at live URL.
+## Deployment: 32%
+- Application deployed at live URL.
 
-Application loads with no errors.
+- Application loads with no errors.
 
-Application GitHub URL submitted.
+- Application GitHub URL submitted.
 
-GitHub repository contains application code.
+- GitHub repository contains application code.
 
-Application Quality: 15%
-Application resembles the mock-up functionality provided in the Challenge instructions.
-Repository Quality: 13%
-Repository has a unique name.
+## Application Quality: 15%
+- Application resembles the mock-up functionality provided in the Challenge instructions.
 
-Repository follows best practices for file structure and naming conventions.
+## Repository Quality: 13%
+- Repository has a unique name.
 
-Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+- Repository follows best practices for file structure and naming conventions.
 
-Repository contains multiple descriptive commit messages.
+- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-Repository contains a quality readme with description, screenshot, link to deployed application.
+- Repository contains multiple descriptive commit messages.
 
-How to Submit the Challenge
+- Repository contains a quality readme with description, screenshot, link to deployed application.
+
+## How to Submit the Challenge
 You are required to submit BOTH of the following for review:
 
-The URL of the deployed application.
+- The URL of the deployed application.
 
-The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
+- The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
