@@ -75,9 +75,13 @@ ul {
     list-style: none;
 }
 
+a,a:hover,a:visited,a:active{
+    color: inherit;
+    text-decoration: none;
+}
+
 /*--------  Top Of Page Header  --------------*/
 header {
-    text-shadow: 1px 1px 2px var(--lt1);
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -85,16 +89,20 @@ header {
     left: 0;
     right: 0;
     z-index: 0;
-    background-color: var(--dk1);
+    background-color: var(--dk2);
+    color: var(--lt1);
+    padding: 1% 0 1% 0;
+    align-items: center;
 }
 
 #menu-open-btn {
     margin-left: 2%;
     cursor: pointer;
+    font-size: 1.5em;
 }
 
 #page-heading {
-    padding-right: 30%;
+    padding-right: 35%;
     flex-wrap: wrap;
 }
 
@@ -125,6 +133,7 @@ header {
 .close-button {
     align-self: flex-end;
     cursor: pointer;
+    font-size: 1.5em;
 }
 
 
@@ -174,6 +183,10 @@ hr {
     padding: 2%;
 }
 
+#skills p{
+    line-height: 1.5em;
+}
+
 .glow-text {
     color: var(--dk1);
     text-shadow: 0 0 4px var(--lt2), 0 0 8px var(--md1);
@@ -186,7 +199,7 @@ hr {
     padding: 2%;
 }
 
-div #project-cards{
+#project-cards{
     flex-wrap: wrap;
 }
 
@@ -255,6 +268,17 @@ div #project-cards{
 .card:hover .project-description {
     display: flex;
     background-color: var(--dk1);
+}
+
+
+/*  footer contact info */
+footer{
+    padding: 2%;
+}
+
+#contact-info{
+    padding-top: 2%;
+    text-align: center;
 }
 
 /*--------  Back To Top Button  --------------*/
