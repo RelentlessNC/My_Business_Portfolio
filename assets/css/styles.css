@@ -1,11 +1,10 @@
 :root {
+    /*--- setting color variables for easy color scheme changes in the future ---*/
     --lt1: #AB8569;
     --lt2: #6D4A2F;
     --md1: #304154;
     --dk1: #2A3C51;
     --dk2: #0D1218;
-    --window-width: view-width;
-    --window-height: view-height;
 }
 
 * {
@@ -17,11 +16,13 @@
 
 html,
 body {
+    /*--- making sure the height and width of the page takes up the whole window ---*/
     background-color: var(--dk1);
     height: 100%;
     width: 100%;
 }
 
+/*--- setting the font-size based on screen-width ---*/
 @media screen and (max-width: 500px) {
 
     html,
@@ -46,6 +47,7 @@ body {
     }
 }
 
+/*--- creating quick to use color scheme classes ---*/
 .bg-lt {
     background-color: var(--lt1);
     color: var(--dk1);
@@ -61,7 +63,12 @@ body {
     color: var(--lt1);
 }
 
-/*--------  All Headings  --------------*/
+.bg-dk2{
+    background-color: var(--dk2);
+    color: var(--lt1);
+}
+
+/*--- center all headings ---*/
 h1,
 h2,
 h3,
@@ -71,16 +78,21 @@ h6 {
     text-align: center;
 }
 
+/*--- remove all bullets for lists ---*/
 ul {
     list-style: none;
 }
 
-a,a:hover,a:visited,a:active{
+/*--- making sure that links aren't blue or underlined ---*/
+a,
+a:hover,
+a:visited,
+a:active {
     color: inherit;
     text-decoration: none;
 }
 
-/*--------  Top Of Page Header  --------------*/
+/*--- Top of page header ---*/
 header {
     display: flex;
     justify-content: space-between;
@@ -89,28 +101,26 @@ header {
     left: 0;
     right: 0;
     z-index: 0;
-    background-color: var(--dk2);
-    color: var(--lt1);
     padding: 1% 0 1% 0;
     align-items: center;
 }
 
+/*--- the open menu button ---*/
 #menu-open-btn {
     margin-left: 2%;
     cursor: pointer;
     font-size: 1.5em;
 }
 
+/*--- Move heading closer to center of window without moving the nav button ---*/
 #page-heading {
     padding-right: 35%;
     flex-wrap: wrap;
 }
 
-/*--------  Sidebar Navigation  --------------*/
+/*--- Side navigation ---*/
 .side-nav {
-    color: var(--lt1);
     font-weight: bolder;
-    background-color: var(--dk2);
     flex-direction: column;
     height: 100%;
     padding-right: 5px;
@@ -120,14 +130,10 @@ header {
     display: none;
 }
 
+/*--- adding vertical space between links ---*/
 .side-nav li {
     height: 20px;
     margin-top: 10%;
-}
-
-.side-nav a {
-    text-decoration: none;
-    color: var(--lt1);
 }
 
 .close-button {
@@ -136,12 +142,7 @@ header {
     font-size: 1.5em;
 }
 
-
-.main {
-    width: 100%;
-    z-index: 0;
-}
-
+/*--- easy to use flex class ---*/
 .flex-row-even {
     display: flex;
     justify-content: space-evenly;
@@ -150,7 +151,7 @@ header {
 
 hr {
     color: var(--dk2);
-    border-width: thick;
+    border-width: medium;
     border-style: solid;
 }
 
@@ -183,11 +184,11 @@ hr {
     padding: 2%;
 }
 
-#skills p{
+#skills p {
     line-height: 1.5em;
 }
 
-.glow-text {
+.shadow-text {
     color: var(--dk1);
     text-shadow: 0 0 4px var(--lt2), 0 0 8px var(--md1);
 }
@@ -199,7 +200,7 @@ hr {
     padding: 2%;
 }
 
-#project-cards{
+#project-cards {
     flex-wrap: wrap;
 }
 
@@ -226,6 +227,12 @@ hr {
     width: 50%;
 }
 
+.project-description {
+    width: 50%;
+    justify-content: center;
+    line-height: 1.2em;
+    border-radius: 10px;
+}
 
 /* hide header on hover */
 .card:hover .card-header {
@@ -235,27 +242,32 @@ hr {
 /* set background images for projects */
 #project1 {
     width: 100%;
-    background-image: url(https://sidigital.co/static/33c22bbc04bd201be169e8437539e491/37e83/bespoke-software-development.png);
+    background-image: url(../images/horiseon.png);
 }
 
 #project2 {
+    /*---Image found during google image search using creative commons licenses filer---*/
     background-image: url(https://www.siyavula.com/read/cat/grade-10-cat/computer-software/images/pg105-01.jpg);
 }
 
 #project3 {
+    /*---Image found during google image search using creative commons licenses filer---*/
     background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
 
 }
 
 #project4 {
+    /*---Image found during google image search using creative commons licenses filer---*/
     background-image: url(https://www.siyavula.com/read/cat/grade-10-cat/computer-software/images/pg105-01.jpg);
 }
 
 #project5 {
+    /*---Image found during google image search using creative commons licenses filer---*/
     background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
 }
 
 #project6 {
+    /*---Image found during google image search using creative commons licenses filer---*/
     background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
 }
 
@@ -272,11 +284,11 @@ hr {
 
 
 /*  footer contact info */
-footer{
+footer {
     padding: 2%;
 }
 
-#contact-info{
+#contact-info {
     padding-top: 2%;
     text-align: center;
 }

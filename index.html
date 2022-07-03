@@ -11,15 +11,18 @@
 </head>
 
 <body>
-    <header>
+    <!-- The header contains my menu button and my heading that stays at the top of the page as your scroll -->
+    <header class="bg-dk2">
         <span id="menu-open-btn" onclick="openNav()">&#9776;</span>
         <h1 id="page-heading">Portfolio of Nicholas Conklin</h1>
     </header>
-    <nav class="side-nav" id="side-nav">
+
+    <!-- This is the collapsable side nav menu that opens and closes with clicks -->
+    <nav class="side-nav bg-dk2" id="side-nav">
         <span class="close-button" id="nav-close" onclick="closeNav()">&times;</span>
         <ul>
             <h2><a href="#">
-                    <li>Top of Page</li>
+                    <li>Home</li>
                 </a></h2>
             <h2><a href="#about-me">
                     <li>About Me</li>
@@ -34,73 +37,83 @@
             </h2>
         </ul>
     </nav>
-    <div class="main" id="main">
-        <section id="me-block" class="bg-md">
-            <p id="statement">My name is Nicholas Conklin and I am a Certified Full Stack Web Developer. I have a B.S. in Computer Science with a focus on software development. I was trained in the U.S. Air Force in logical problem solving that has been fine tuned by academic and professional experience. My focus is attention to detail with the user experience and navigation efficiency.
-            </p>
-            <img class="image" id="selfie" src="assets/images/20220112_105834.jpg" />
-        </section>
-        <section class="bg-lt flex-row-even">
-            <div id="about-me">
-                <h2 class="topic-heading">About Me</h2>
-                <hr>
-                <p>After spending 6 years in the U.S. Air Force, I spent some time figuring out what I wanted to do with the rest of my life. I decided to work with computers in some way. I graudated from McMurry Univerity with a Bachelor's in Science with a Major in Computer Science. I have been working at McMurry University as an LMS Administrator since 2017. I am now enrolled in the Full Stack Web Developer coding bootcamp at UT Austin and hoping to jumpstart my career in a new direction!</p>
-            </div>
-            <div id="skills">
-                <h2 class="topic-heading">My Skills</h2>
-                <hr>
-                <p class="glow-text">
-                    HTML5&emsp;
-                    CSS3&emsp;
-                    JavaScript&emsp;
-                    Python3&emsp;
-                    C&emsp;
-                    Bootstrap&emsp;
-                    JQuery&emsp;
-                    SQL&emsp;
-                    React.js&emsp;
-                    JSON&emsp;
-                    AJAX</p>
-            </div>
-        </section>
-        <section class="bg-md" id="projects">
-            <h2 class="topic-heading">Projects</h2>
+
+    <!-- The me-block section contains my brand statement and a selfie -->
+    <section id="me-block" class="bg-md">
+        <p id="statement">My name is Nicholas Conklin and I am a Certified Full Stack Web Developer. I have a B.S. in Computer Science with a focus on software development. I was trained in the U.S. Air Force in logical problem solving that has been fine tuned by academic and professional experience. My focus is attention to detail with the user experience and navigation efficiency.
+        </p>
+        <img class="image" id="selfie" src="assets/images/selfie.jpg" / alt="selfie image">
+    </section>
+
+   <!-- The section below contains 2 divs with my background information and my skills -->
+    <section class="bg-lt flex-row-even">
+        <div id="about-me">
+            <h2 class="topic-heading">About Me</h2>
             <hr>
-            <div class="flex-row-even" id="project-cards">
-                <a href="https://www.google.com" class="card" id="project1" target="_blank">
-                    <h3 class="card-header">Challenge 1</h3>
-                    <p class="project-description">This challenge was to edit the existing HTML and CSS.
-                    </p>
-                </a>
-                <a href="https://www.google.com" class="card" id="project2" target="_blank">
-                    <h3 class="card-header">Project 2</h3>
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
-                    </p>
-                </a>
-                <a href="https://www.google.com" class="card" id="project3" target="_blank">
-                    <h3 class="card-header">Project 3</h3>
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
-                    </p>
-                </a>
-                <a href="https://www.google.com" class="card" id="project4" target="_blank">
-                    <h3 class="card-header">Project 4</h3>
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
-                    </p>
-                </a>
-                <a href="https://www.google.com" class="card" id="project5" target="_blank">
-                    <h3 class="card-header">Project 5</h3>
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
-                    </p>
-                </a>
-                <a href="https://www.google.com" class="card" id="project6" target="_blank">
-                    <h3 class="card-header">Project 6</h3>
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
-                    </p>
-                </a>
-            </div>
-        </section>
-        <a href="#"><button id="back-to-top" type="reset">&#8593;</button></a>
-    </div>
+            <p>After spending 6 years in the U.S. Air Force, I spent some time figuring out what I wanted to do with the rest of my life. I decided to work with computers in some way. I graudated from McMurry Univerity with a Bachelor's in Science with a Major in Computer Science. I have been working at McMurry University as an LMS Administrator since 2017. I am now enrolled in the Full Stack Web Developer coding bootcamp at UT Austin and hoping to jumpstart my career in a new direction!</p>
+        </div>
+        
+        <!-- I decided to use &emsp; for four spaces instead of a list because I felt like the list was ultimately limiting to the formatting on my page -->
+        <div id="skills">
+            <h2 class="topic-heading">My Skills</h2>
+            <hr>
+            <p class="shadow-text">
+                HTML5&emsp;
+                CSS3&emsp;
+                JavaScript&emsp;
+                Python3&emsp;
+                C&emsp;
+                Bootstrap&emsp;
+                JQuery&emsp;
+                SQL&emsp;
+                React.js&emsp;
+                JSON&emsp;
+                AJAX</p>
+        </div>
+    </section>
+    
+    <!-- The projects section contains all the cards with links to projects I have completed or to Google for the projects that I haven't done yet -->
+    <section class="bg-md" id="projects">
+        <h2 class="topic-heading">Projects</h2>
+        <hr>
+        <div class="flex-row-even" id="project-cards">
+            <a href="https://relentlessnc.github.io/Challenge_1_Solution/" class="card" id="project1" target="_blank">
+                <h3 class="card-header">Challenge 1</h3>
+                <p class="project-description">Horiseon web page
+                </p>
+            </a>
+            <a href="https://www.google.com" class="card" id="project2" target="_blank">
+                <h3 class="card-header">Project 2</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                </p>
+            </a>
+            <a href="https://www.google.com" class="card" id="project3" target="_blank">
+                <h3 class="card-header">Project 3</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                </p>
+            </a>
+            <a href="https://www.google.com" class="card" id="project4" target="_blank">
+                <h3 class="card-header">Project 4</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                </p>
+            </a>
+            <a href="https://www.google.com" class="card" id="project5" target="_blank">
+                <h3 class="card-header">Project 5</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                </p>
+            </a>
+            <a href="https://www.google.com" class="card" id="project6" target="_blank">
+                <h3 class="card-header">Project 6</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                </p>
+            </a>
+        </div>
+    </section>
+    
+    <!-- I feel that every web page that has scrolling should always have a back to top page -->
+    <a href="#"><button id="back-to-top" type="reset">&#8593;</button></a>
+    
+    <!-- Footer contains all my contact information with links -->
     <footer class=" bg-lt">
         <h2>Contact</h2>
         <hr>
@@ -125,11 +138,13 @@
             </table>
         </address>
     </footer>
+    
+    <!-- A little bit of JS to make my side-nav menu work properly -->
     <script>
         function openNav() {
             document.getElementById("side-nav").style.width = "250px";
             document.getElementById("side-nav").style.display = "flex";
-            document.getElementById("side-nav").style.transition = "0.3s"
+            document.getElementById("side-nav").style.transition = "0.3s";
         }
 
         function closeNav() {
@@ -137,5 +152,8 @@
             document.getElementById("side-nav").style.display = "none";
 
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

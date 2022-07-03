@@ -1,3 +1,6 @@
+# Portfolio
+The purpose of this challenge was to create a professional portfolio that I can use from this point forward to promote myself to potentional employers or customers.
+
 # User Story
 - AS AN employer
 - I WANT to view a potential employee's deployed portfolio of work samples
@@ -69,6 +72,10 @@ Satisfies all of the preceding acceptance criteria.
 - Repository contains multiple descriptive commit messages.
 
 - Repository contains a quality readme with description, screenshot, link to deployed application.
+![Image of my wireframe for this project.](assets/images/portfolioWireframe.jpg)
+
+![Screenshot of my page.](assets/images/pageScreenshot.png)
+
 
 ## How to Submit the Challenge
 You are required to submit BOTH of the following for review:
