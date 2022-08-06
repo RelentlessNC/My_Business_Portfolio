@@ -11,7 +11,6 @@
     font-family: arial, sans-serif;
     margin: 0px;
     padding-top: 0px;
-
 }
 
 html,
@@ -22,9 +21,10 @@ body {
     width: 100%;
 }
 
-/*--- setting the font-size based on screen-width ---*/
-@media screen and (max-width: 500px) {
 
+/*--- setting the font-size based on screen-width ---*/
+
+@media screen and (max-width: 500px) {
     html,
     body {
         font-size: 1em;
@@ -32,7 +32,6 @@ body {
 }
 
 @media screen and (min-width: 501px) {
-
     html,
     body {
         font-size: 1.2em;
@@ -40,14 +39,15 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-
     html,
     body {
         font-size: 1.5em;
     }
 }
 
+
 /*--- creating quick to use color scheme classes ---*/
+
 .bg-lt {
     background-color: var(--lt1);
     color: var(--dk1);
@@ -63,12 +63,14 @@ body {
     color: var(--lt1);
 }
 
-.bg-dk2{
+.bg-dk2 {
     background-color: var(--dk2);
     color: var(--lt1);
 }
 
+
 /*--- center all headings ---*/
+
 h1,
 h2,
 h3,
@@ -78,12 +80,16 @@ h6 {
     text-align: center;
 }
 
+
 /*--- remove all bullets for lists ---*/
+
 ul {
     list-style: none;
 }
 
+
 /*--- making sure that links aren't blue or underlined ---*/
+
 a,
 a:hover,
 a:visited,
@@ -92,7 +98,9 @@ a:active {
     text-decoration: none;
 }
 
+
 /*--- Top of page header ---*/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -105,20 +113,26 @@ header {
     align-items: center;
 }
 
+
 /*--- the open menu button ---*/
+
 #menu-open-btn {
     margin-left: 2%;
     cursor: pointer;
     font-size: 1.5em;
 }
 
+
 /*--- Move heading closer to center of window without moving the nav button ---*/
+
 #page-heading {
     padding-right: 35%;
     flex-wrap: wrap;
 }
 
+
 /*--- Side navigation ---*/
+
 .side-nav {
     font-weight: bolder;
     flex-direction: column;
@@ -130,7 +144,9 @@ header {
     display: none;
 }
 
+
 /*--- adding vertical space between links ---*/
+
 .side-nav li {
     height: 20px;
     margin-top: 10%;
@@ -142,7 +158,9 @@ header {
     font-size: 1.5em;
 }
 
+
 /*--- easy to use flex class ---*/
+
 .flex-row-even {
     display: flex;
     justify-content: space-evenly;
@@ -177,7 +195,9 @@ hr {
     padding: 2%;
 }
 
+
 /*--------  Skills Section  --------------*/
+
 #skills {
     width: 50%;
     text-align: center;
@@ -193,9 +213,12 @@ hr {
     text-shadow: 0 0 4px var(--lt2), 0 0 8px var(--md1);
 }
 
+
 /*--------  Application Cards  --------------*/
 
+
 /* set padding for div #projects */
+
 #projects {
     padding: 2%;
 }
@@ -234,12 +257,16 @@ hr {
     border-radius: 10px;
 }
 
+
 /* hide header on hover */
+
 .card:hover .card-header {
     display: none;
 }
 
+
 /* set background images for projects */
+
 #project1 {
     width: 100%;
     background-image: url(../images/horiseon.png);
@@ -247,13 +274,12 @@ hr {
 
 #project2 {
     /*---Image found during google image search using creative commons licenses filer---*/
-    background-image: url(https://www.siyavula.com/read/cat/grade-10-cat/computer-software/images/pg105-01.jpg);
+    background-image: url(../images/gifterLogo.png);
 }
 
 #project3 {
     /*---Image found during google image search using creative commons licenses filer---*/
-    background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
-
+    background-image: url(../images/weatherDashboard.png);
 }
 
 #project4 {
@@ -271,12 +297,16 @@ hr {
     background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
 }
 
+
 /* hide project description until hover */
+
 .card .project-description {
     display: none;
 }
 
+
 /* display project description on hover*/
+
 .card:hover .project-description {
     display: flex;
     background-color: var(--dk1);
@@ -284,6 +314,7 @@ hr {
 
 
 /*  footer contact info */
+
 footer {
     padding: 2%;
 }
@@ -293,7 +324,9 @@ footer {
     text-align: center;
 }
 
+
 /*--------  Back To Top Button  --------------*/
+
 #back-to-top {
     background-color: var(--lt2);
     border-color: var(--lt1);
