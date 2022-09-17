@@ -33,7 +33,12 @@
             </h2>
             <h2>
                 <a href="#projects">
-                    <li>My Projects</li>
+                    <li>Projects</li>
+                </a>
+            </h2>
+            <h2>
+                <a href="#demos">
+                    <li>Demos</li>
                 </a>
             </h2>
             <h2>
@@ -54,7 +59,7 @@
     <!-- The section below contains 2 divs with my background information and my skills -->
     <section class="bg-lt flex-row-even">
         <div id="about-me">
-            <h2 class="topic-heading">About Me</h2>
+            <h2>About Me</h2>
             <hr>
             <p>After spending 6 years in the U.S. Air Force, I spent some time figuring out what I wanted to do with the rest of my life. I decided to work with computers in some way. I graudated from McMurry Univerity with a Bachelor's in Science with a
                 Major in Computer Science. I have been working at McMurry University as an LMS Administrator since 2017. I am now enrolled in the Full Stack Web Developer coding bootcamp at UT Austin and hoping to jumpstart my career in a new direction!</p>
@@ -62,27 +67,27 @@
 
         <!-- I decided to use &emsp; for four spaces instead of a list because I felt like the list was ultimately limiting to the formatting on my page -->
         <div id="skills">
-            <h2 class="topic-heading">My Skills</h2>
+            <h2>My Skills</h2>
             <hr>
             <p class="shadow-text">
-                HTML5&emsp; CSS3&emsp; JavaScript&emsp; Python3&emsp; C&emsp; Bootstrap&emsp; JQuery&emsp; SQL&emsp; React.js&emsp; JSON&emsp; AJAX</p>
+                HTML5&emsp; CSS3&emsp; JavaScript&emsp; Node.js&emsp; Python3&emsp; C&emsp; Bootstrap&emsp; JQuery&emsp; SQL&emsp; React.js&emsp; JSON&emsp; AJAX</p>
         </div>
     </section>
 
     <!-- The projects section contains all the cards with links to projects I have completed or to Google for the projects that I haven't done yet -->
     <section class="bg-md" id="projects">
-        <h2 class="topic-heading">Projects</h2>
+        <h2>Projects</h2>
         <hr>
         <div class="flex-row-even" id="project-cards">
-            <a href="https://relentlessnc.github.io/Challenge_1_Solution/" class="card" id="project1" target="_blank">
-                <h3 class="card-header">Challenge 1</h3>
-                <p class="project-description">Horiseon web page</p>
+            <a href="https://relentlessnc.github.io/horiseonWebsite/" class="card" id="project1" target="_blank">
+                <h3 class="card-header">Horiseon Webpage</h3>
+                <p class="project-description">Search Engine Optimization</p>
             </a>
-            <a href="https://relentlessnc.github.io/group10-project1/" class="card" id="project2" target="_blank">
+            <a href="https://relentlessnc.github.io/gifter/" class="card" id="project2" target="_blank">
                 <h3 class="card-header">Gifter</h3>
                 <p class="project-description">Upcoming gift reminder</p>
             </a>
-            <a href="https://relentlessnc.github.io/challenge_6_solution/" class="card" id="project3" target="_blank">
+            <a href="https://relentlessnc.github.io/weatherDashboard/" class="card" id="project3" target="_blank">
                 <h3 class="card-header">Weather Dashboard</h3>
                 <p class="project-description">A custom weather dashboard</p>
             </a>
@@ -90,22 +95,36 @@
                 <h3 class="card-header">Note Taker</h3>
                 <p class="project-description">Heroku app to track notes</p>
             </a>
-            <a href="https://www.google.com" class="card" id="project5" target="_blank">
-                <h3 class="card-header">Project 5</h3>
-                <p class="project-description">Lorem ipsum dolor sit amet, consectetur</p>
+            <a href="https://relentlessnc.github.io/workdayScheduler/" class="card" id="project5" target="_blank">
+                <h3 class="card-header">Workday Scheduler</h3>
+                <p class="project-description">A schedule for a single workday</p>
             </a>
-            <a href="https://www.google.com" class="card" id="project6" target="_blank">
-                <h3 class="card-header">Project 6</h3>
-                <p class="project-description">Lorem ipsum dolor sit amet, consectetur</p>
+            <a href="https://relentlessnc.github.io/codingQuiz/" class="card" id="project6" target="_blank">
+                <h3 class="card-header">Coding Quiz</h3>
+                <p class="project-description">A short quiz app</p>
             </a>
         </div>
+    </section>
+    <section class="bg-lt" id="demos">
+        <h2>Console Demo Videos</h2>
+        <hr>
+        <div class="flex-row-even">
+            <table>
+                <tr>
+                    <td><a href="https://youtu.be/QRfqqeIJa50" target="_blank">Readme Generator</a></td>
+                    <td><a href="https://youtu.be/ab3YIYIpP4U" target="_blank">Team Profile Generator</a></td>
+                    <td><a href="https://youtu.be/bNQQ0aaK5YQ" target="_blank">Employee Database</a></td>
+                </tr>
+            </table>
+        </div>
+
     </section>
 
     <!-- I feel that every web page that has scrolling should always have a back to top page -->
     <a href="#"><button id="back-to-top" type="reset">&#8593;</button></a>
 
     <!-- Footer contains all my contact information with links -->
-    <footer class=" bg-lt">
+    <footer class=" bg-md">
         <h2>Contact</h2>
         <hr>
         <address class="flex-row-even" id="contact-info">

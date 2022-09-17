@@ -240,6 +240,12 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--md1);
+}
+
+.card:hover {
+    background-color: var(--lt1);
+    border-color: var(--dk2);
 }
 
 .card-header {
@@ -265,37 +271,57 @@ hr {
 }
 
 
+/* Demo videos */
+
+#demos {
+    padding: 2%;
+}
+
+#demos tr,
+#demos td {
+    padding: 1%;
+    text-align: center;
+}
+
+#demos td:hover {
+    background-color: var(--dk1);
+    color: var(--lt1);
+}
+
+
 /* set background images for projects */
 
-#project1 {
+
+/* #project1 {
     width: 100%;
     background-image: url(../images/horiseon.png);
-}
+} */
 
-#project2 {
-    /*---Image found during google image search using creative commons licenses filer---*/
+
+/* #project2 {
+    /*---Image found during google image search using creative commons licenses filer---
     background-image: url(../images/gifterLogo.png);
-}
+} 
 
 #project3 {
-    /*---Image found during google image search using creative commons licenses filer---*/
+    /*---Image found during google image search using creative commons licenses filer---
     background-image: url(../images/weatherDashboard.png);
 }
 
 #project4 {
-    /*---Image found during google image search using creative commons licenses filer---*/
+    /*---Image found during google image search using creative commons licenses filer---
     background-image: url(../images/noteTaker.png);
 }
 
 #project5 {
-    /*---Image found during google image search using creative commons licenses filer---*/
+    /*---Image found during google image search using creative commons licenses filer---
     background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
 }
 
 #project6 {
-    /*---Image found during google image search using creative commons licenses filer---*/
+    /*---Image found during google image search using creative commons licenses filer---
     background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
-}
+}*/
 
 
 /* hide project description until hover */
